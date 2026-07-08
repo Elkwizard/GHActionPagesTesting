@@ -12,3 +12,5 @@ fs.writeFileSync("./Generated/data.html", `
 		<p><i>${json.italic}</i></p>
 	</body>
 `, "utf-8");
+console.log(process.cwd());
+console.log(fs.readdirSync("."));
