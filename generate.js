@@ -1,6 +1,7 @@
 import fs from "node:fs";
 
 const json = JSON.parse(fs.readFileSync("data.json", "utf-8"));
+fs.mkdirSync("Generated", { recursive: true });
 fs.writeFileSync("./Generated/data.html", `
 	<!DOCTYPE html>
 	<head>
